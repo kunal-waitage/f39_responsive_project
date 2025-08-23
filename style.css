@@ -6,12 +6,8 @@
   letter-spacing: 0.2px;
 }
 body {
-  /* background: linear-gradient(180deg, #e6e0f8, #d1c4e9, #b39ddb); */
-  /* background: linear-gradient(180deg, #f0f4ff, #dbe4ff, #c5d8ff); */
   background: linear-gradient(to bottom, #faf4e6, #f5ecd9, #ede0c8);
   background-attachment: fixed;
-  /* background-color: #3b1f1f; */
-  /* background-color: white; */
 }
 .logo {
   width: 60px;
@@ -41,7 +37,7 @@ nav {
 }
 .d1 {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 ul {
@@ -78,15 +74,12 @@ li {
   margin-right: 15px;
   border-radius: 19px;
   box-sizing: border-box;
-  box-shadow: 0 0 12px #f5d76e;
+  box-shadow: 0 0 9px grey;
   border: 1px solid yellow;
 }
 
 .main_heading1 h1 {
-  /* color: #4b0082; */
   color: #322301;
-  /* padding-top: 20px; */
-  /* padding-bottom: 15px; */
   text-shadow: 0 0 12px #f5d76e;
   text-align: center;
 }
@@ -108,9 +101,10 @@ li {
 
 .elementalSection {
   margin: 15px;
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-radius: 19px;
-  box-shadow: 0 0 12px #f5d76e;
+  box-shadow: 0 0 9px grey;
   border: 1px solid yellow;
 }
 .elementalSection h1 {
@@ -136,17 +130,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: center; */
 }
-
 .elemcard p {
   align-self: flex-start;
   padding-left: 20px;
   padding-right: 5px;
   padding-bottom: 5px;
   color: #f5d76e;
-
-  /* text-shadow: 0 0 1px #f5d76e; */
 }
 
 .elemImages {
@@ -156,7 +146,6 @@ li {
 
 .elem1 img:hover {
   box-shadow: 0 0 20px #f5d76e, inset 0 0 20px #f5d76e;
-  /* box-shadow: 0 0 12px #fe9500; */
 }
 
 .elem2 img:hover {
@@ -171,25 +160,71 @@ li {
 .elem5 img:hover {
   box-shadow: 0 0 20px #f6c32a, inset 0 0 20px #f6c32a;
 }
-.cards_container1 {
-  padding: 20px;
-  border: 1px solid black;
+.cards_container2 {
+  padding: 15px;
+  /* border: 1px solid yellow; */
   width: 100%;
-  height: 90vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
-.cards_container1 div {
+.cards_container2 div {
   width: 30%;
-  height: 30%;
-  border: 1px solid blue;
+  border: 1px solid yellow;
+  border-radius: 19px;
+  box-shadow: 0 0 12px grey;
 }
 
-.card2 {
-  margin: auto;
+.d2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  color: #2f2101;
 }
-.card3 {
-  margin-left: auto;
+.cardimg {
+  width: 130px;
+}
+
+.card {
+  padding: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #2f2101;
+  padding: 10px;
+  background: linear-gradient(to right, #3b1d60, #2f3b70);
+  color: #f5d76e;
+  display: block;
+  justify-self: flex-end;
+  border-radius: 19px;
+  box-shadow: 0 0 8px grey;
+  border: 1px solid yellow;
+}
+
+.about_card {
+  margin: auto; /*important*/
+  background: linear-gradient(to right, #3b1d60, #2f3b70);
+  padding: 10px;
+}
+.secPara {
+  color: #f5d76e;
+}
+.about_card a {
+  text-decoration: none;
+  color: #2f2101;
+  padding: 8px;
+  border-radius: 19px;
+  background: #f5d76e;
+  display: block;
+  justify-self: flex-end;
+  border: 1px solid yellow;
+  box-shadow: 0 0 6px #f5d76e;
+}
+.admission_card {
+  margin-left: auto; /*important*/
 }
