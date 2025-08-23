@@ -2,26 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-:root {
-  color-scheme: light dark;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.2px;
 }
 body {
-  background-color: light dark(#fff, #444);
+  /* background: linear-gradient(180deg, #e6e0f8, #d1c4e9, #b39ddb); */
+  /* background: linear-gradient(180deg, #f0f4ff, #dbe4ff, #c5d8ff); */
+  background: linear-gradient(to bottom, #faf4e6, #f5ecd9, #ede0c8);
+  background-attachment: fixed;
+  /* background-color: #3b1f1f; */
+  /* background-color: white; */
 }
 .logo {
   width: 60px;
   height: 60px;
   border-radius: 20%;
   border: 1px solid #f5d76e;
+  box-shadow: 0 2px 6px grey;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 8px #f5d76e);
+  transform: scale(1.05);
+  transition: 0.3s ease;
 }
 nav {
   display: flex;
   margin: 5px;
+  align-items: center;
+  margin-top: 10px;
 }
 .navlist {
   border: 1px solid #f5d76e;
-  background: linear-gradient(90deg, #3b1d60, #2f3b70);
+  background: linear-gradient(to right, #3b1d60, #2f3b70);
+  box-shadow: 0 2px 6px grey;
   padding: 5px;
   margin-left: 5px;
   border-radius: 15px;
@@ -40,22 +53,143 @@ li {
   padding: 15px;
   list-style: none;
 }
-a {
+.navlist a {
   text-decoration: none;
   color: #f5d76e;
   padding: 2px;
-  /* aeefff f0f0f0 f5d76e */
   text-shadow: 0 0 3px #f5d76e;
+  transition: 0.3s ease;
+  /* border-radius: 6px; */
 }
-a:hover {
+.navlist a:hover {
   background-color: #f5d76e;
-  color: #3b1d60;
-  text-shadow: 0 0 2px #3b1d60;
-  border-radius: 7px;
+  color: #000000;
+  text-shadow: 0 0 2px #000000;
+  border-radius: 6px;
+  padding: 2px;
+  background-color: #f5d76e;
+  box-shadow: 0 0 12px #f5d76e;
 }
-.main-cont {
-  width: 100%;
-  margin: 20px;
+.main_heading1 {
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 19px;
+  box-sizing: border-box;
+  box-shadow: 0 0 12px #f5d76e;
+  border: 1px solid yellow;
+}
+
+.main_heading1 h1 {
+  /* color: #4b0082; */
+  color: #322301;
+  /* padding-top: 20px; */
+  /* padding-bottom: 15px; */
+  text-shadow: 0 0 12px #f5d76e;
+  text-align: center;
+}
+
+.main_heading1 h2 {
+  color: #322301;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  text-shadow: 0 0 10px #f5d76e;
+  text-align: center;
+}
+
+.main_heading1 p {
+  max-width: 900px;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+}
+
+.elementalSection {
+  margin: 15px;
+  padding-top: 10px;
+  border-radius: 19px;
+  box-shadow: 0 0 12px #f5d76e;
+  border: 1px solid yellow;
+}
+.elementalSection h1 {
+  color: #322301;
+  text-shadow: 0 0 6px #f5d76e;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.baseElem {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+
+.elemcard {
+  background: linear-gradient(to bottom, #3b1d60, #2f3b70);
+  padding: 0;
+  max-width: 250px;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.elemcard p {
+  align-self: flex-start;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  color: #f5d76e;
+
+  /* text-shadow: 0 0 1px #f5d76e; */
+}
+
+.elemImages {
+  border-radius: 100%;
+  padding: 15px;
+}
+
+.elem1 img:hover {
+  box-shadow: 0 0 20px #f5d76e, inset 0 0 20px #f5d76e;
+  /* box-shadow: 0 0 12px #fe9500; */
+}
+
+.elem2 img:hover {
+  box-shadow: 0 0 20px #a4f4f9, inset 0 0 20px #a4f4f9;
+}
+.elem3 img:hover {
+  box-shadow: 0 0 20px #dbaf72, inset 0 0 20px #dbaf72;
+}
+.elem4 img:hover {
+  box-shadow: 0 0 20px #dbefff, inset 0 0 20px #dbefff;
+}
+.elem5 img:hover {
+  box-shadow: 0 0 20px #f6c32a, inset 0 0 20px #f6c32a;
+}
+.cards_container1 {
+  padding: 20px;
+  border: 1px solid black;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cards_container1 div {
+  width: 30%;
+  height: 30%;
+  border: 1px solid blue;
+}
+
+.card2 {
+  margin: auto;
+}
+.card3 {
+  margin-left: auto;
 }
