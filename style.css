@@ -280,14 +280,51 @@ li {
   padding: 2px 0 15px 15px;
 }
 .samestyle1 p {
-  padding: 0 15px 3px 15px;
+  padding: 0 15px 5px 15px;
 }
 
-/* .flex2 {
-  width: 100%;
-  height: 100vh;
+.year3 {
+  /* width: 100%; */
   border: 1px solid yellow;
-} */
+  box-shadow: 0 0 3px gray;
+  border-radius: 19px;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 55px;
+  margin-left: 55px;
+}
+.year3 h3 {
+  text-align: center;
+  color: #2f2101;
+  padding: 25px 0 5px 0;
+}
+.flex2 {
+  display: flex;
+  /* border: 1px solid black; */
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px 50px 10px 50px;
+  flex-wrap: wrap;
+}
+.courseY3 {
+  width: 40%;
+  border: 1px solid yellow;
+  padding: 15px 15px 15px 15px; /*  purpose to remember the style as top right bottom left*/
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 6px gray;
+  /* justify-content: space-between; */
+}
+.courseY3 p {
+  padding: 7px 0 7px 0;
+}
+.specializationStyle2 {
+  margin-left: auto;
+  background: linear-gradient(to right, #3b1d60, #2f3b70);
+  color: #f5d76e;
+}
 @media (max-width: 1024px) {
   .elem3 {
     margin-top: 50px;
@@ -297,6 +334,10 @@ li {
     width: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .samestyle1 {
+    margin: 10px;
   }
 }
 
@@ -355,5 +396,26 @@ li {
   }
   .samestyle1 {
     width: 100%;
+  }
+  .courseY3 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .year3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .clearsidemargin {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
