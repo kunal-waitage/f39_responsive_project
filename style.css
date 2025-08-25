@@ -35,12 +35,13 @@ nav {
   margin-left: 5px;
   border-radius: 15px;
 }
+
 .d1 {
   width: 100%;
   /* height: 100vh; */
 }
 
-ul {
+.navlist {
   width: 100%;
   display: flex;
 }
@@ -53,7 +54,7 @@ li {
   text-decoration: none;
   color: #f5d76e;
   padding: 2px;
-  text-shadow: 0 0 3px #f5d76e;
+  /* text-shadow: 0 0 1px #f5d76e; */
   transition: 0.3s ease;
   /* border-radius: 6px; */
 }
@@ -92,7 +93,7 @@ li {
   text-align: center;
 }
 
-.main_heading1 p {
+.paraStyle1 {
   max-width: 900px;
   text-align: center;
   margin: auto;
@@ -130,13 +131,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid yellow;
 }
 .elemcard p {
   align-self: flex-start;
   padding-left: 20px;
   padding-right: 5px;
   padding-bottom: 5px;
-  color: #f5d76e;
 }
 
 .elemImages {
@@ -144,22 +145,42 @@ li {
   padding: 15px;
 }
 
+.elem1 {
+  background: linear-gradient(45deg, #8b0000, #ff4500, #ffd700);
+  color: #ffd700;
+}
+.elem2 {
+  background: linear-gradient(45deg, #008080, #1e90ff, #e0ffff);
+  color: #bdecec;
+}
+.elem3 {
+  background: linear-gradient(45deg, #5c4033, #556b2f, #a9a9a9);
+  color: #8fbc8f;
+}
+.elem4 {
+  background: linear-gradient(45deg, #b0e0e6, #f8f8ff, #e6e6fa);
+  color: #4b0082;
+}
+.elem5 {
+  background: linear-gradient(45deg, #aa7b3d, #efb930, #e7872c);
+  color: #1a1a1a;
+}
 .elem1 img:hover {
   box-shadow: 0 0 20px #f5d76e, inset 0 0 20px #f5d76e;
 }
-
 .elem2 img:hover {
   box-shadow: 0 0 20px #a4f4f9, inset 0 0 20px #a4f4f9;
 }
 .elem3 img:hover {
-  box-shadow: 0 0 20px #dbaf72, inset 0 0 20px #dbaf72;
+  box-shadow: 0 0 20px #f1ba6d, inset 0 0 20px #f1ba6d;
 }
 .elem4 img:hover {
-  box-shadow: 0 0 20px #dbefff, inset 0 0 20px #dbefff;
+  box-shadow: 0 0 20px #78bff9, inset 0 0 20px #78bff9;
 }
 .elem5 img:hover {
-  box-shadow: 0 0 20px #f6c32a, inset 0 0 20px #f6c32a;
+  box-shadow: 0 0 20px #b86002, inset 0 0 20px #b86002;
 }
+
 .cards_container2 {
   padding: 15px;
   /* border: 1px solid yellow; */
@@ -170,11 +191,13 @@ li {
   /* justify-content: space-around; */
 }
 
-.cards_container2 div {
+.card,
+.card2 {
   width: 30%;
   border: 1px solid yellow;
   border-radius: 19px;
   box-shadow: 0 0 12px grey;
+  padding: 10px;
 }
 
 .d2 {
@@ -187,10 +210,6 @@ li {
 }
 .cardimg {
   width: 130px;
-}
-
-.card {
-  padding: 10px;
 }
 
 .card a {
@@ -227,4 +246,114 @@ li {
 }
 .admission_card {
   margin-left: auto; /*important*/
+}
+
+.navbar2 {
+  display: none;
+}
+
+/* cources page css starts here*/
+
+.sub-cont {
+  width: 100%;
+  margin-top: 25px;
+}
+.flex1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.samestyle1 {
+  width: 40%;
+  border: 1px solid yellow;
+  box-shadow: 0 0 6px grey;
+  border-radius: 15px;
+  margin: 20px;
+}
+.samestyle1 h3 {
+  color: #2f2101;
+  padding: 15px 15px 0 15px; /* padding: top right bottom left*/
+}
+.samestyle1 h4 {
+  font-weight: normal;
+  padding: 2px 0 15px 15px;
+}
+.samestyle1 p {
+  padding: 0 15px 3px 15px;
+}
+
+/* .flex2 {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid yellow;
+} */
+@media (max-width: 1024px) {
+  .elem3 {
+    margin-top: 50px;
+  }
+
+  .rescard {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  .navbar2 {
+    display: flex;
+  }
+  .nav-parent {
+    width: 100%;
+    color: #f5d76e;
+    background: linear-gradient(to right, #3b1d60, #2f3b70);
+    border: 1px solid yellow;
+    border-radius: 15px;
+    margin-left: 4px;
+    padding-left: 5px;
+  }
+  .parentPage:hover .navlist2 {
+    display: block;
+    background: linear-gradient(to right, #3b1d60, #2f3b70);
+    border-radius: 19px;
+    width: 40%;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .navlist2 {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    border: 1px solid yellow;
+  }
+  .navlist2 a {
+    text-decoration: none;
+    color: #f5d76e;
+    /* text-shadow: 0 0 1px #f5d76e; */
+  }
+  .navlist2 li {
+    width: 100%;
+    margin-top: -4px;
+    justify-content: space-around;
+  }
+  .elem2 {
+    margin-top: 50px;
+  }
+  .elem5 {
+    margin-top: 50px;
+  }
+  .rescard {
+    width: auto;
+    margin-top: 20px;
+  }
+  .samestyle1 {
+    width: 100%;
+  }
 }
