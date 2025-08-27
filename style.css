@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.2px;
+  /* color: #2f2101; */
 }
 body {
   background: linear-gradient(to bottom, #faf4e6, #f5ecd9, #ede0c8);
@@ -95,9 +96,11 @@ li {
 
 .paraStyle1 {
   max-width: 900px;
+  color: #2f2101;
   text-align: center;
   margin: auto;
-  font-size: 15px;
+  font-size: 16px;
+  padding-bottom: 10px;
 }
 
 .elementalSection {
@@ -148,23 +151,23 @@ li {
 
 .elem1 {
   background: linear-gradient(45deg, #8b0000, #ff4500, #ffd700);
-  color: #ffd700;
+  color: #ffd900;
 }
 .elem2 {
   background: linear-gradient(45deg, #008080, #1e90ff, #e0ffff);
-  color: #bdecec;
+  color: #c0fafa;
 }
 .elem3 {
   background: linear-gradient(45deg, #5c4033, #556b2f, #a9a9a9);
-  color: #8fbc8f;
+  color: #b6e3b6;
 }
 .elem4 {
   background: linear-gradient(45deg, #b0e0e6, #f8f8ff, #e6e6fa);
-  color: #4b0082;
+  color: #9500ff;
 }
 .elem5 {
   background: linear-gradient(45deg, #aa7b3d, #efb930, #e7872c);
-  color: #1a1a1a;
+  color: #410101;
 }
 .elem1 img:hover {
   box-shadow: 0 0 20px #f5d76e, inset 0 0 20px #f5d76e;
@@ -257,7 +260,7 @@ li {
 
 .sub-cont {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .flex1 {
   width: 100%;
@@ -332,8 +335,9 @@ li {
 /*  About page css below from now on */
 .aboutbox {
   /* margin: 25px; */
-  padding: 50px;
+  padding: 30px;
   width: 70%;
+  /* border: 1px solid black; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -372,7 +376,118 @@ li {
   color: #2f2101;
   text-align: center;
 }
-@media (max-width: 1024px) {
+.enrollrules {
+  width: 70%;
+  border: 1px solid yellow;
+  box-shadow: 0 0 9px grey;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 19px;
+}
+.enrollrules h2 {
+  color: #2f2101;
+  text-shadow: 0 0 2px #f5d76e;
+  text-align: center;
+}
+.enrollbox {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  margin-top: 25px;
+  border: 1px solid yellow;
+  border-radius: 19px;
+  box-shadow: 0 0 9px grey;
+  background: linear-gradient(to right, #3b1d60, #2f3b70);
+}
+.enrollbox h2 {
+  color: #f5d76e;
+  padding-top: 10px;
+  text-align: center;
+}
+.enrollbox h3 {
+  color: #f5d76e;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.enrollform {
+  color: #f5d76e;
+  margin-left: 50px;
+  font-size: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.enrollform label {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.inputarea1 {
+  width: 350px;
+  color: #2f2101;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 9px;
+  margin-left: 5px;
+  background: #ede0c8;
+  border: 1px solid yellow;
+  box-shadow: 0 0 3px #f5d76e;
+  text-align: center;
+}
+.elemoption {
+  background-color: #eccc90;
+  color: #2f2101;
+}
+.enrollform button {
+  width: 200px;
+  padding: 8px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 155px;
+  margin-bottom: 20px;
+  border: 1px solid yellow;
+  border-radius: 19px;
+  background: #f5d76e;
+  color: #2f2101;
+  box-shadow: 0 0 6px #f5d76e;
+}
+.enrollclose {
+  color: #2f2101;
+  font-size: 32px;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  text-shadow: 0 0 2px #f5d76e;
+}
+.main-cont2 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactbox {
+  width: 75%;
+  color: #f5d76e;
+  font-size: 24px;
+  background: linear-gradient(to right, #3b1d60, #2f3b70);
+  padding: 15px;
+  border: 1px solid yellow;
+  border-radius: 19px;
+  box-shadow: 0 0 12px grey;
+}
+.cont_heading {
+  text-align: center;
+  padding: 5px;
+  text-shadow: 0 0 3px #000000;
+}
+.contactbox ul {
+  text-shadow: 0 0 3px black;
+}
+
+@media (max-width: 1023px) {
   .elem3 {
     margin-top: 50px;
   }
@@ -385,6 +500,12 @@ li {
 
   .samestyle1 {
     margin: 10px;
+  }
+  .enrollbox {
+    width: 70%;
+  }
+  .contactbox {
+    width: 95%;
   }
 }
 
@@ -431,6 +552,7 @@ li {
     margin-top: -4px;
     justify-content: space-around;
   }
+
   .elem2 {
     margin-top: 50px;
   }
@@ -464,5 +586,53 @@ li {
 
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+  }
+  /*about page*/
+  .aboutbox {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .aboutbox p {
+    /* width: 90%; */
+    margin-left: 3px;
+    padding-left: 0;
+    padding-right: 0;
+    /* text-align: unset; */
+  }
+  .aboutcard2 {
+    padding-right: 0;
+    margin-left: 3px;
+  }
+  .aboutcard3 {
+    padding-right: 0;
+    margin-left: 3px;
+  }
+  .shift {
+    margin-left: 30px;
+  }
+  .enrollrules {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 98%;
+  }
+  .enrollbox {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 98%;
+  }
+  .enrollform {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .inputarea1 {
+    width: 95%;
+  }
+  .enrollform button {
+    margin-left: 100px;
+  }
+  .contactbox {
+    font-size: 16px;
   }
 }

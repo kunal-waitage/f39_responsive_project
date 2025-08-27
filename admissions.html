@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Services</title>
+    <title>Admissions</title>
   </head>
   <body>
     <div class="d1">
@@ -46,8 +46,75 @@
       </nav>
 
       <div class="main-cont">
-        <h1 style="color: red; font-size: 100px">admissions page</h1>
+        <div class="enrollrules">
+          <h2>Before you step through the gates of Moonsflare…</h2>
+          <ul>
+            <li>
+              <i
+                >🪄 Every applicant must resonate with at least one magical
+                affinity.</i
+              >
+            </li>
+            <li>
+              <i>
+                📅 Entrance Examinations shall be held on the 3rd Moon of the
+                Season.</i
+              >
+            </li>
+            <li>
+              <i
+                >🧭 Candidates must be within the Academy's sacred grounds
+                during the exam - distance illusions will not be considered.
+              </i>
+            </li>
+            <li>
+              <i
+                >📖 Bring a personal grimoire (journal) for note-keeping and
+                rune sketching.
+              </i>
+            </li>
+            <li>
+              <i
+                >🕯️ Only those with true intent and unwavering spirit shall pass
+                beyond the threshold.</i
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="enrollbox">
+          <h2>Begin Your Journey at Moonsflare Academy</h2>
+          <h3>
+            <i
+              >“The gates open but once each season. Claim your place among the
+              chosen.”</i
+            >
+          </h3>
+          <form class="enrollform">
+            <label>Enter Your Name: </label>
+            <input type="email" class="inputarea1" required/>
+            <label>Enter Your Email:</label>
+            <input type="text" class="inputarea1" required/>
+            <label>Enter Your Age:</label>
+            <input type="text" minlength="2" maxlength="2" class="inputarea1" required/>
+            <label>Magical Affinity:</label>
+            <select name="Magical Affinity" class="inputarea1">
+              <option value="Fire_element" class="elemoption">Fire</option>
+              <option value="Water_element" class="elemoption">Water</option>
+              <option value="Earth_element" class="elemoption">Earth</option>
+              <option value="Wind_element" class="elemoption">Wind</option>
+              <option value="Lightning_element" class="elemoption">Lightning</option>
+            </select>
+            <label>Year of Enrollment:</label>
+            <select name="Year of Enrollment" class="inputarea1">
+              <option value="First_year" class="elemoption">First Year</option>
+              <option value="Transfer_applicant" class="elemoption">Transfer Applicant</option>
+            </select>
+            <label>Any Personal Statement:</label>
+            <textarea name="personal statement"class="inputarea1" placeholder="Why do you seek the path of magic?" rows="5"></textarea>
+            <button><b>Enroll Now</b></button>
+          </form>
+        </div>
+        <h1 class="enrollclose"><i>"Let The Journey Begin"</i></h1>
       </div>
-    </div>
   </body>
 </html>
