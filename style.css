@@ -616,14 +616,14 @@ li {
     margin-left: 30px;
   }
   .enrollrules {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
   }
   .enrollbox {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
   }
   .enrollform {
     font-size: 18px;
@@ -633,9 +633,9 @@ li {
     width: 95%;
   }
   .enrollform button {
-    margin-left: 100px;
+    margin-left: 60px;
   }
   .contactbox {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
