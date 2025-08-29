@@ -121,15 +121,18 @@ li {
 .baseElem {
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 30px;
-  padding-top: 30px;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .elemcard {
   background: linear-gradient(to bottom, #3b1d60, #2f3b70);
-  padding: 0;
-  max-width: 250px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 380px;
   border-radius: 19px;
   display: flex;
   flex-direction: column;
@@ -488,11 +491,7 @@ li {
 }
 
 @media (max-width: 1023px) {
-  .elem3 {
-    margin-top: 50px;
-  }
-
-  .rescard {
+  .elem .rescard {
     width: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -552,12 +551,8 @@ li {
     margin-top: -4px;
     justify-content: space-around;
   }
-
-  .elem2 {
-    margin-top: 50px;
-  }
-  .elem5 {
-    margin-top: 50px;
+  .elemcard {
+    height: auto;
   }
   .rescard {
     width: auto;
